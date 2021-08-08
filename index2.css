@@ -1,0 +1,192 @@
+/* mobile first styling */
+html{
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+#hamburger{
+    background: none;
+    border: none;
+    color:#000000;
+    font-size: 3rem;
+    cursor: pointer;
+    float: right;
+    margin-top: -15vw;
+    
+}
+.blockchain_logo{
+    margin-top: 5vw;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    background-color: #263238;
+    position: relative;
+    display: open;
+    padding-top: 5%;
+    padding-bottom: 15%;
+}
+nav li{
+    list-style-type: none;
+}
+nav a{
+    display: block;
+    padding: .6rem 0;
+    padding-left: 3rem;
+    color: #fff;
+    text-align: left;
+    text-decoration: none;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    font-size: 120%;
+}
+
+nav a:hover{
+    background: rgba(0, 0, 0, 0.2);
+}
+nav li:active{
+    color: #000000;
+  }
+nav ul:open{
+    display: block;
+}
+
+
+nav .joinUs{
+    background: #ffc100;
+    color: #ffffff;
+    font-weight: 700;
+    width: 110px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+header, nav{
+    margin-left: 10%;
+}
+
+
+footer{
+    background:#263238;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif ;
+    color: #fff;
+    padding-top: 15%;
+}
+footer h2{
+    margin: 1rem 0 .3rem 1.5em;
+}
+footer .foot{
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .column{
+    padding: 0 3vw;
+}
+footer a{
+    text-decoration: none;
+    color: inherit;
+    text-align:left ;
+}
+footer li{
+    margin-left: -10%;
+    list-style-type: none;
+    
+}
+
+footer .medium1{
+    margin-left: 5%;
+}
+footer .jpegs{
+    margin-left: 30%;
+}
+footer .path img{
+    margin: 5% 2%
+}
+footer .club2021{
+float: right;
+}
+
+
+
+@media only screen and (min-width: 1024px){
+    #hamburger{
+        float: right;
+        
+    }
+    .blockchain_logo{
+        margin-top: 0vw;
+    }
+    nav ul{
+        margin-left: 5vw;
+        display: block;
+        margin-top: -10%;
+        margin-left: 25%;
+        padding-bottom: 3rem;
+
+        background: none;
+
+       
+    }
+    nav li{
+        float: left;
+        width: auto;
+    }
+    nav a{
+        padding: .7rem 1rem;
+        color: #000000;
+    }
+    nav #hamburger{
+        display: none;
+    }
+    nav .join{
+        float: right;
+        margin-right: 8%;
+    }
+
+
+    
+
+    header .logo111{
+        margin-left: 8%;
+    }
+
+
+    footer .container{
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+    footer .large{
+        flex-basis:30%
+    }
+    footer{
+        margin: 0;
+        padding: 0;
+        padding-right: 5%;
+    
+        
+
+
+    }
+    footer .medium{
+        margin-top: 10%;
+    }
+    footer .logo111{
+        margin-left: -40%;
+    }
+    footer.medium1{
+        margin-left: 0%;
+    }
+    .jpegs{
+        margin-left: 0%;
+    }
+    .club2021{
+        margin-left: 38vw;
+    
+    
+}
+}

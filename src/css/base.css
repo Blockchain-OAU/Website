@@ -1,0 +1,297 @@
+/* mobile first styling */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+header *,
+footer * {
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0 1.5rem;
+}
+
+header>.joinUs {
+  display: none
+}
+
+nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+}
+
+.show-mobile-menu nav {
+  display: unset;
+}
+
+#hamburger {
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 3rem;
+  cursor: pointer;
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 1.5rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  background-color: #263238;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-top: 15%;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  display: block;
+  padding: .6rem 0;
+  color: #fff;
+  text-align: left;
+  text-decoration: none;
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+  font-size: 120%;
+}
+
+nav li {
+  padding-left: 4rem;
+}
+
+
+nav li:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+nav li:active {
+  color: #000000;
+}
+
+nav ul:open {
+  display: block;
+}
+
+nav li:last-of-type {
+  margin-top: 2rem;
+}
+
+nav .close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+}
+
+header .joinUs {
+  background: #ffc100;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 0 2rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+header>.joinUs {
+  padding: 0.8rem 2rem;
+}
+
+header .joinUs a {
+  color: #fff;
+}
+
+footer {
+  background: #263238;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  padding-top: 15%;
+  padding: 4rem 1.5rem;
+}
+
+footer .medium{
+  margin-right: 1rem;
+}
+
+footer .container {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer h2 {
+  margin: 0;
+}
+
+footer .foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  text-align: left;
+}
+
+footer .logo111{
+  text-align: center;
+}
+footer .logo111 img{
+  margin: 0;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer .jpegs {
+  margin-left: 30%;
+}
+
+footer .club2021 {
+  float: right;
+}
+
+footer .path{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .path a {
+  margin: 0 1rem 0 0;
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+  #hamburger {
+    display: none;
+  }
+
+  header>.joinUs {
+    display: unset;
+  }
+
+  header {
+    padding: 0 3rem;
+  }
+
+  nav {
+    position: static;
+    display: unset;
+  }
+
+  nav ul {
+    display: block;
+    background: none;
+    padding: 0;
+  }
+
+  nav li {
+    float: left;
+    width: auto;
+  }
+
+  nav li {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+  }
+
+  nav li:hover {
+    background: none;
+  }
+
+
+  nav a {
+    padding: .7rem 1rem;
+    color: #707070;
+    font-weight: 400;
+  }
+  nav a:hover{
+    color: #000000;
+  }
+
+  nav #hamburger {
+    display: none;
+  }
+
+  nav li:last-of-type {
+    display: none;
+  }
+
+  .show-mobile-menu nav {
+    display: unset;
+  }
+
+  header .close {
+    display: none;
+  }
+
+  header .logo111 {
+    margin-left: 8%;
+  }
+
+  footer .container {
+    display: flex;
+    flex-direction: row-reverse;
+
+  }
+
+  footer .large {
+    flex-basis: 20%
+  }
+
+  footer .logo111 {
+    text-align: start;
+  }
+
+  footer .medium {
+    margin-top: 4.7rem;
+  }
+
+  footer {
+    padding: 4rem 3rem;
+  }
+
+  footer.medium1 {
+    margin-left: 0%;
+  }
+
+  .jpegs {
+    margin-left: 0%;
+  }
+
+  .club2021 {
+    margin-left: 38vw;
+  }
+}
