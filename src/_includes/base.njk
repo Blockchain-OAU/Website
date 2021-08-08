@@ -13,11 +13,14 @@
   <title>{{ title }}</title>
 </head>
 <body>
-  {% include "header.html" %}
+  {% include "header.njk" %}
   <main>
     {{ content | safe }}
   </main>
   {% include "footer.html" %}
-  <script src="js/header.js"></script>
+  <script src="/js/base.js"></script>
+  {% if script %} 
+    <script src="{{script}}"></script>
+  {% endif %}
 </body>
 </html>

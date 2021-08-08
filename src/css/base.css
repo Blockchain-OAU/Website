@@ -4,6 +4,12 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 header *,
 footer * {
   box-sizing: border-box;
@@ -85,7 +91,7 @@ nav li:hover {
   background: rgba(0, 0, 0, 0.2);
 }
 
-nav li:active {
+nav li.active a{
   color: #000000;
 }
 
