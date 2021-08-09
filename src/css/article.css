@@ -215,16 +215,17 @@ textarea {
 
 /* Responsiveness for Desktop Screen */
 @media only screen and (min-width: 1023px) {
-  body {
+  .container {
     margin: 0 auto;
     width: 75%;
-    font-size: 20px;
+    font-size: 35px;
   }
 
   .card-container {
       width: 75%;
       height: 45vh;
       margin: 4em auto;
+      padding: 1.3em;
   }
 
   #submit-article {
