@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/*Resets*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Base styling*/
+.container {
+    background: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+    margin: 3% 4%;
+}
+
+p {
+    font-size: 0.6em;
+}
+
+/*Article styling*/
+.article {
+    margin: 2.5em 0;
+}
+
+.author-info {
+    font-weight: 500;
+    display: flex;
+    margin: 0.5em 0;
+}
+
+.article-author, .article-date {
+    font-size: 0.4em;
+    font-weight: 500;
+    color: rgba(255, 193, 0, 1);
+}
+
+.article-author {
+    margin-right: 2em;
+}
+
+.article-title {
+    max-width: 90%;
+    font-size: 0.8em;
+}
+
+.article-img {
+    width: 100%;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+}
+
+.article-content {
+    font-size: 0.4em;
+    font-weight: 500;
+    text-align: justify;
+    white-space: pre-line;
+}
+
+img[src*=_logo] {
+    width: 0.8em;
+}
+
+.share-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3em 0.4em;
+    width: 40%;
+    background: rgba(255, 193, 0, 1);
+}
+
+.share-text {
+    border-left: 1px solid #FFFFFF;
+    font-size: 0.4em;
+    font-weight: 500;
+    margin-left: 0.3em;
+    padding-left: 0.2em;
+    color: #FFFFFF;
+}
+
+.social-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 0.5em 0;
+}
+
+/*Form styling*/
+#form-container, #form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-container {
+    margin-right: 10%;
+    margin-bottom: 2em;
+}
+
+#form-container > p {
+    font-weight: 500;
+    font-size: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#form > input, #form > textarea {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.4em;
+    border: 2px solid #FFEC38;
+    margin: 5px 0;
+    outline: none;
+    padding: 8px 15px;
+}
+
+#form > input {
+    height: 2rem;
+}
+
+textarea {
+    resize: none;
+}
+
+.check {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.check > p {
+    font-size: 0.3em;
+    font-weight: 500;
+    margin-left: 7.5px;
+}
+
+#submit-article {
+    background: rgba(255, 193, 0, 1);
+    color: #FFFFFF;
+    border: none;
+    font-family:"Poppins", sans-serif;
+    font-size: 0.7rem;
+    padding: 0.7em 0.8em;
+    height: 3.2em;
+    width: 35%;
+}
+
+/*Card Styling*/
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6em;
+    font-size: 0.4em;
+    margin: 0 0 3rem 2.5rem;
+    width: 90%;
+    border-radius: 10px;
+    /*float: right;*/
+    box-shadow: 0px 7px 15px -2px rgba(108,103,103,0.43);
+        -webkit-box-shadow: 0px 7px 15px -2px rgba(108,103,103,0.43);
+        -moz-box-shadow: 0px 7px 15px -2px rgba(108,103,103,0.43);
+}
+
+.card-container > img {
+    width: 30%;
+}
+
+.card-content {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.card-content > p {
+    color: rgba(112, 112, 112, 1);
+    margin: 0.6em 0;
+}
+
+.card-content > h3 {
+    font-weight: 500;
+}
+
+.subscribe-email {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.6em 0;
+}
+
+.subscribe-email > input, .subscribe-email > button {
+    font-size: 0.6em;
+    height: 2.5em;
+    font-family:"Poppins", sans-serif;
+    border-radius: 3px;
+}
+
+.subscribe-email > input {
+    width: 52%;
+    outline: none;
+    border: 1px solid rgba(255, 193, 0, 1);
+    color: rgba(255, 193, 0, 1);
+    padding: 0 5px;
+}
+
+.subscribe-email > input::placeholder {
+    color: rgba(255, 193, 0, 1);
+}
+
+.subscribe-email > button {
+    width: 45%;
+    border: none;
+    background: rgba(255, 193, 0, 1);
+    color: #FFFFFF;
+}
+
+/* Responsiveness for Desktop Screen */
+@media only screen and (min-width: 1023px) {
+  body {
+    margin: 0 auto;
+    width: 75%;
+    font-size: 20px;
+  }
+
+  .card-container {
+      width: 75%;
+      height: 45vh;
+      margin: 4em auto;
+  }
+
+  #submit-article {
+      width: 20%;
+  }
+
+  .card-content {
+      font-size: 1.3em;
+  }
+
+  .share-container {
+      width: 50%;
+  }
+
+  .social-container {
+      width: 30%;
+  }
+}
