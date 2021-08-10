@@ -7,6 +7,7 @@
 }
 
 body {
+    width: 100%;
     padding: 1rem;
     background-color: #fff;
     font-size: 0.9rem;
@@ -17,7 +18,7 @@ div {
     margin-top: 1rem;
 }
 
-.heading, aside, main {
+.heading, aside, #trending , #recommend {
     margin: 3rem 0;
 }
 
@@ -54,6 +55,7 @@ a {
     border: solid 1px #000;
     border-radius: 5px;
     display: flex;
+    z-index: -1;
 }
 
 #search {
@@ -160,11 +162,6 @@ h4 {
     line-height: 12px;
 }
 
-#recommend {
-    width: 95vw;
-}
-
-
 @media screen and (min-width:500px) { 
     .heading, #categories, #recent {
         width: 80%;
@@ -187,6 +184,10 @@ h4 {
 @media screen and (min-width:720px) { 
     .heading, #categories, #recent {
         width: auto;
+    }
+
+    aside {
+        top: 100px;
     }
 
     main {
@@ -215,38 +216,63 @@ h4 {
         height: 60px;
     }
     .container {
-        width: 90%;
+        width: 600px;
         margin: auto;
     }
     #recent p {
         font-size: 14px;
     }
-    .grid {
-        width: 210px;
-        margin: 1rem;
-    }
-    
-    .grid .card {
-        width: 210px;
-        height: 210px;
-        margin: 0.5rem;
-    }
 }
 
 @media screen and (min-width:1024px) { 
+    main {
+        width: 500px;
+    }
     #trend-post {
         margin: 2rem 1rem;
     }
-}
+
+    aside {
+        width: 372px;
+        position: absolute;
+        right: 3rem;
+    }
+
+    #categories , #recent {
+        border: solid 1px #000;
+        border-radius: 5px;
+        padding: 1rem 1rem 2rem 1rem;
+    }
+
+    .container {
+        margin: 0;
+    }
+    small {
+        font-size: 10px;
+
+    }
+    h4 {
+        font-size: 16px;
+    }
+    .trend-desc , .container {
+        font-size: 14px;
+        line-height: 16px;
+    }
+} 
 
 
 @media screen and (min-width:1440px) { 
     body {
-        width: 1340px;
+        width: 1420px;
         margin: auto;
         position: relative;
         padding: 3rem;
     }
+
+    main {
+        width: 1000px;
+    }
+
     h1 {
         font-size: 3rem;
         margin: 2rem 0;
@@ -265,13 +291,6 @@ h4 {
         font-size: 1.4rem;
     }
 
-
-    aside {
-        width: 372px;
-        position: absolute;
-        right: 3rem;
-    }
-
     .search-div {
         padding: 1rem 0;
     }
@@ -287,10 +306,7 @@ h4 {
         padding: 1rem;
     }
 
-
     #categories , #recent {
-        border: solid 1px #000;
-        border-radius: 5px;
         padding: 1rem 1rem 2rem 2rem;
     }
 
@@ -322,7 +338,7 @@ h4 {
     }
 
     #trend-post {
-        width: 100%;
+       width: 800px;
         padding-top: 320px;
         line-height: 1.2rem;
         margin-left: 1rem;
