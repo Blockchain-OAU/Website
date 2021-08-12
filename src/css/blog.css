@@ -262,10 +262,8 @@ h4 {
 
 @media screen and (min-width:1440px) { 
     body {
-        width: 1420px;
         margin: auto;
         position: relative;
-        padding: 3rem;
     }
 
     main {
