@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+}
+
+div.top {
+  display: flex;
+  align-content: center;
+  background: url('../assets/img/upcoming-events/upcoming-event-banner.svg') rgba(0, 0, 0, 0.84) ;
+  background-blend-mode: multiply;
+  background-size: 1280px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div.top img.banner {
+  position: relative;
+  display: block;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 7vw;
+}
+
+div.details {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 4rem;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+div.details > div {
+  margin: 0 4rem;
+}
+
+h2.heading {
+  font-weight: bold;
+  font-size: 48px;
+  color: #000000;
+  width: 26rem;
+  margin-top: 5rem;
+  line-height: 72px;
+}
+
+.host-grid {
+    display: grid;
+    grid-column-gap: 3rem;
+  padding: 10px 0;
+  justify-content: end;
+  grid-template-columns: 30% 25% 25%
+}
+  
+  .host-image {
+    border-radius: 50%;
+  }
+  
+  p.host-name {
+    font-weight: bold !important;
+    text-align: center;
+  }
+
+p.sub-details {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+p#date,
+p#venue,
+.social-icons {
+  display: flex;
+}
+.date {
+  background: url("../assets/img/custom-icons/date-icon.svg");
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin-right: 1.5rem;
+}
+.venue {
+  background: url("../assets/img/custom-icons/venue-icon.svg");
+  width: 30px;
+  height: 36px;
+  display: block;
+  margin-right: 1.5rem;
+}
+
+h2.heading2 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+  margin-top: 5rem;
+}
+
+.social-icons .twitter {
+  background: url("../assets/img/custom-icons/twitter-icon.svg");
+  width: 17px;
+  height: 15px;
+  display: block;
+  margin-right: 1.5rem;
+}
+
+.social-icons .instagram {
+  background: url("../assets/img/custom-icons/instagram-icon.svg");
+  width: 18px;
+  height: 18px;
+  display: block;
+  margin-right: 1.5rem;
+}
+
+.social-icons .whatsapp {
+  background: url("../assets/img/custom-icons/whatsapp-icon.svg");
+  width: 18px;
+  height: 18.12px;
+  display: block;
+  margin-right: 1.5rem;
+}
+
+.social-icons .linkedin {
+  background: url("../assets/img/custom-icons/linkedin-icon.svg");
+  width: 18px;
+  height: 18px;
+  display: block;
+  margin-right: 1.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  div.top {
+    margin-bottom: 70px;
+    height: 170px;
+    background-size: 375px;
+  }
+  div.top img.banner {
+    height: 220px;
+    width: 80%;
+  }
+
+  div.details {
+    padding-bottom: 2rem;
+    width: 80%;
+  }
+
+  div.details > div {
+    margin: 0 1rem;
+  }
+
+  h2.heading {
+    font-size: 18px;
+    margin-top: 0.8rem;
+    line-height: 27px;
+    width: 10rem;
+  }
+
+  p.sub-details {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  p.sub-details.d-v {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 15px;
+    color: #ffc100;
+  }
+
+  .date {
+    background: url("../assets/img/custom-icons/date-icon-small.svg");
+    width: 11px;
+    height: 11px;
+    display: block;
+    margin-right: 1rem;
+  }
+
+  .venue {
+    background: url("../assets/img/custom-icons/venue-icon-small.svg");
+    width: 13px;
+    height: 16px;
+    display: block;
+    margin-right: 1rem;
+  }
+
+
+  h2.heading2 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 1rem;
+  }
+
+  .social-icons .twitter {
+    background: url("../assets/img/custom-icons/twitter-icon.svg");
+    width: 17px;
+    height: 15px;
+    display: block;
+    margin-right: 1.5rem;
+  }
+
+  .social-icons .instagram {
+    background: url("../assets/img/custom-icons/instagram-icon.svg");
+    width: 18px;
+    height: 18px;
+    display: block;
+    margin-right: 1.5rem;
+  }
+
+  .social-icons .whatsapp {
+    background: url("../assets/img/custom-icons/whatsapp-icon.svg");
+    width: 18px;
+    height: 18.12px;
+    display: block;
+    margin-right: 1.5rem;
+  }
+
+  .social-icons .linkedin {
+    background: url("../assets/img/custom-icons/linkedin-icon.svg");
+    width: 18px;
+    height: 18px;
+    display: block;
+    margin-right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 400px) {
+    div.top {
+        margin-bottom: 95px;
+        height: 180px;
+        background-size: 450px;
+      }
+      div.top img.banner {
+        height: 250px;
+        width: 80%;
+      }
+}
+
+@media screen and (min-width: 500px) {
+  div.top {
+    margin-bottom: 125px;
+    height: 230px;
+    background-size: 570px;
+  }
+
+  div.top img.banner {
+    height: 316px;
+  }
+
+  div.details {
+    padding-bottom: 3rem;
+  }
+
+  div.details > div {
+    margin: 0 1.5rem;
+  }
+
+  h2.heading {
+    font-size: 23px;
+    margin-top: 1rem;
+    line-height: 36px;
+    width: 13rem;
+  }
+
+  p.sub-details {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+
+  p.sub-details.d-v {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 17px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  div.top {
+    margin-bottom: 160px;
+    height: 340px;
+    background-size: 900px;
+  }
+  div.top img.banner {
+    height: 456px;
+  }
+
+  div.details {
+    padding-bottom: 3rem;
+  }
+
+  div.details > div {
+    margin: 0 2rem;
+  }
+
+  h2.heading {
+    font-size: 32px;
+    margin-top: 1.2rem;
+    line-height: 50px;
+    width: 17rem;
+  }
+
+  p.sub-details {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  p#date,
+p#venue,
+.social-icons {
+  height: 2.5rem;
+}
+
+  p.sub-details.d-v {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .date {
+    background: url("../assets/img/custom-icons/date-icon.svg");
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin-right: 1.5rem;
+  }
+  .venue {
+    background: url("../assets/img/custom-icons/venue-icon.svg");
+    width: 30px;
+    height: 37px;
+    display: block;
+    margin-right: 1.5rem;
+  }
+
+  h2.heading2 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.top {
+    margin-bottom: 220px;
+    height: 460px;
+    background-size: 1180px;
+  }
+  div.top img.banner {
+    height: 620px;
+  }
+
+  div.details {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  div.details > div {
+    margin: 0 3rem;
+  }
+
+  h2.heading {
+    font-size: 40px;
+    margin-top: 2rem;
+    line-height: 66px;
+    width: 22rem;
+  }
+
+  p.sub-details {
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+
+  p#date,
+p#venue,
+.social-icons {
+  height: 3rem;
+}
+
+  p.sub-details.d-v {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  h2.heading2 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 48px;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+    div.top {
+        margin-bottom: 305px;
+    height: 600px;
+    background-size: 1560px;
+      }
+      div.top img.banner {
+        height: 820px;
+      }
+    
+      div.details {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+      }
+}
+
+@media screen and (min-width: 1360px) {
+    div.top {
+        margin-bottom: 305px;
+    height: 600px;
+    background-size: 1560px;
+      }
+      div.top img.banner {
+        height: 820px;
+      }
+    
+      div.details {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+      }
+}
