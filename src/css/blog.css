@@ -7,18 +7,25 @@
 }
 
 body {
-    padding: 1rem;
+    width: 100%;
     background-color: #fff;
     font-size: 0.9rem;
     font-family: 'Poppins', sans-serif;
+}
+
+main {
+    padding: 1.5rem;
+}
+#main {
+    padding: 0;
 }
 
 div {
     margin-top: 1rem;
 }
 
-.heading, aside, main {
-    margin: 3rem 0;
+.heading, aside, #trending , #recommend {
+    margin: 1rem 0 3rem;
 }
 
 h1 , h2 , p {
@@ -54,6 +61,7 @@ a {
     border: solid 1px #000;
     border-radius: 5px;
     display: flex;
+    z-index: -1;
 }
 
 #search {
@@ -125,7 +133,7 @@ a {
     left: -0.5rem;
 }
 
-.container {
+#main .container {
     display: flex;
     flex-flow: wrap;
     width: fit-content;
@@ -155,15 +163,10 @@ h4 {
     font-weight: 700;
 }
 
-.trend-desc , .container {
+.trend-desc , #main .container {
     font-size: 10px;
     line-height: 12px;
 }
-
-#recommend {
-    width: 95vw;
-}
-
 
 @media screen and (min-width:500px) { 
     .heading, #categories, #recent {
@@ -189,20 +192,21 @@ h4 {
         width: auto;
     }
 
-    main {
-        width: 750px;
+    aside {
+        top: 100px;
+    }
+
+    #main {
+        width: auto;
     }
 
     #categories div {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .category-link {
         font-size: 14px;
-        padding: 0;
-        box-shadow: none;
-        margin: 0.5rem 0;
     }
 
     #trend-post {
@@ -214,39 +218,77 @@ h4 {
     .small-img {
         height: 60px;
     }
-    .container {
-        width: 90%;
+    #main .container {
         margin: auto;
     }
     #recent p {
         font-size: 14px;
     }
-    .grid {
-        width: 210px;
-        margin: 1rem;
-    }
-    
-    .grid .card {
-        width: 210px;
-        height: 210px;
-        margin: 0.5rem;
-    }
 }
 
 @media screen and (min-width:1024px) { 
+     main {
+        padding: 3rem;
+    }
+    .search-bar {
+        width: 100%;
+    }
+
     #trend-post {
+        width: 600px;
+        padding-top: 270px;
         margin: 2rem 1rem;
     }
-}
+
+    #categories div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .category-link {
+        padding: 0;
+        box-shadow: none;
+        margin: 0.5rem 0;
+    }
+
+    aside {
+        width: 270px;
+        float: right;
+    }
+
+    #categories , #recent {
+        border: solid 1px #000;
+        border-radius: 5px;
+        padding: 1rem 1rem 2rem 1rem;
+    }
+    small {
+        font-size: 10px;
+
+    }
+    h4 {
+        font-size: 16px;
+    }
+    .trend-desc , #main .container {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    #main .container {
+        width: 600px;
+        margin: 0;
+    }
+} 
 
 
 @media screen and (min-width:1440px) { 
     body {
-        width: 1340px;
         margin: auto;
         position: relative;
-        padding: 3rem;
     }
+
+    aside {
+        width: 400px;
+    }
+
     h1 {
         font-size: 3rem;
         margin: 2rem 0;
@@ -265,13 +307,6 @@ h4 {
         font-size: 1.4rem;
     }
 
-
-    aside {
-        width: 372px;
-        position: absolute;
-        right: 3rem;
-    }
-
     .search-div {
         padding: 1rem 0;
     }
@@ -285,13 +320,6 @@ h4 {
     }
     .search-btn {
         padding: 1rem;
-    }
-
-
-    #categories , #recent {
-        border: solid 1px #000;
-        border-radius: 5px;
-        padding: 1rem 1rem 2rem 2rem;
     }
 
     .category-link {
@@ -322,7 +350,7 @@ h4 {
     }
 
     #trend-post {
-        width: 100%;
+       width: 800px;
         padding-top: 320px;
         line-height: 1.2rem;
         margin-left: 1rem;
@@ -330,6 +358,7 @@ h4 {
   
     .trend-desc {
         padding: 1rem;
+        padding-top: 3rem;
     }
     
     .post-img {
@@ -340,10 +369,6 @@ h4 {
 
     #recommend {
         margin-top: 100px;
-        width: 100%;
-    }
-    
-    .container {
         width: 100%;
     }
     
@@ -366,10 +391,20 @@ h4 {
         font-size: 18px;
     }
     
-    .trend-desc , .container {
+    .trend-desc , #main .container {
         font-size: 14px;
         line-height: 21px;
     }
-    
-    
+
+    #main .container {
+        width: 800px;
+    }
+
+}
+
+@media screen and (min-width:1800px) { 
+    main {
+        width: 1700px;
+        margin: auto;
+    }
 }
