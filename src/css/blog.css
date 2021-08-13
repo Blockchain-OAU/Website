@@ -13,12 +13,19 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+main {
+    padding: 1.5rem;
+}
+#main {
+    padding: 0;
+}
+
 div {
     margin-top: 1rem;
 }
 
 .heading, aside, #trending , #recommend {
-    margin: 3rem 0;
+    margin: 1rem 0 3rem;
 }
 
 h1 , h2 , p {
@@ -126,7 +133,7 @@ a {
     left: -0.5rem;
 }
 
-.container {
+#main .container {
     display: flex;
     flex-flow: wrap;
     width: fit-content;
@@ -156,7 +163,7 @@ h4 {
     font-weight: 700;
 }
 
-.trend-desc , .container {
+.trend-desc , #main .container {
     font-size: 10px;
     line-height: 12px;
 }
@@ -189,20 +196,17 @@ h4 {
         top: 100px;
     }
 
-    main {
-        width: 750px;
+    #main {
+        width: auto;
     }
 
     #categories div {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .category-link {
         font-size: 14px;
-        padding: 0;
-        box-shadow: none;
-        margin: 0.5rem 0;
     }
 
     #trend-post {
@@ -214,8 +218,7 @@ h4 {
     .small-img {
         height: 60px;
     }
-    .container {
-        width: 600px;
+    #main .container {
         margin: auto;
     }
     #recent p {
@@ -224,27 +227,39 @@ h4 {
 }
 
 @media screen and (min-width:1024px) { 
-    main {
-        width: 500px;
+     main {
+        padding: 3rem;
     }
+    .search-bar {
+        width: 100%;
+    }
+
     #trend-post {
+        width: 600px;
+        padding-top: 270px;
         margin: 2rem 1rem;
     }
 
+    #categories div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .category-link {
+        padding: 0;
+        box-shadow: none;
+        margin: 0.5rem 0;
+    }
+
     aside {
-        width: 372px;
-        position: absolute;
-        right: 3rem;
+        width: 270px;
+        float: right;
     }
 
     #categories , #recent {
         border: solid 1px #000;
         border-radius: 5px;
         padding: 1rem 1rem 2rem 1rem;
-    }
-
-    .container {
-        margin: 0;
     }
     small {
         font-size: 10px;
@@ -253,9 +268,13 @@ h4 {
     h4 {
         font-size: 16px;
     }
-    .trend-desc , .container {
+    .trend-desc , #main .container {
         font-size: 14px;
         line-height: 16px;
+    }
+    #main .container {
+        width: 600px;
+        margin: 0;
     }
 } 
 
@@ -266,8 +285,8 @@ h4 {
         position: relative;
     }
 
-    main {
-        width: 1000px;
+    aside {
+        width: 400px;
     }
 
     h1 {
@@ -301,10 +320,6 @@ h4 {
     }
     .search-btn {
         padding: 1rem;
-    }
-
-    #categories , #recent {
-        padding: 1rem 1rem 2rem 2rem;
     }
 
     .category-link {
@@ -343,6 +358,7 @@ h4 {
   
     .trend-desc {
         padding: 1rem;
+        padding-top: 3rem;
     }
     
     .post-img {
@@ -353,10 +369,6 @@ h4 {
 
     #recommend {
         margin-top: 100px;
-        width: 100%;
-    }
-    
-    .container {
         width: 100%;
     }
     
@@ -379,10 +391,20 @@ h4 {
         font-size: 18px;
     }
     
-    .trend-desc , .container {
+    .trend-desc , #main .container {
         font-size: 14px;
         line-height: 21px;
     }
-    
-    
+
+    #main .container {
+        width: 800px;
+    }
+
+}
+
+@media screen and (min-width:1800px) { 
+    main {
+        width: 1700px;
+        margin: auto;
+    }
 }
