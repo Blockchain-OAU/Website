@@ -38,6 +38,9 @@ let shareText = document.createElement('p')
 let shareTwitter = document.createElement('img')
 let shareWhatsapp = document.createElement('img')
 let shareLinkedin = document.createElement('img')
+let aTwitter = document.createElement('a')
+let aWhatsapp = document.createElement('a')
+let aLinkedin = document.createElement('a')
 
 // Adding a class name for styling created elements
 author.classList.add('article-author')
@@ -58,12 +61,24 @@ img.src = data.image;
 article.innerHTML = data.content;
 datePublished.innerHTML = data.date;
 
+
 //adding sharing contents
 shareIcon.src = '/assets/img/share.svg'
 shareText.innerHTML = 'share'
 shareTwitter.src = '/assets/img/twitter_logo.svg'
 shareWhatsapp.src = '/assets/img/whatsapp_logo.svg'
 shareLinkedin.src = '/assets/img/linkedin_logo.svg'
+//Twitter share
+aTwitter.appendChild(shareTwitter)
+aTwitter.href = `https://twitter.com/share?url=pageUrl&text=Check this out!`
+//Whatsapp share
+aWhatsapp.appendChild(shareWhatsapp)
+aWhatsapp.href = `whatsapp://send?text=pageUrl Check this out!`
+aLinkedin.appendChild(shareLinkedin)
+
+//enabling the linkedin share with a dummy link
+let postUrl = `www.google.com`
+aLinkedin.href = `http://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(postUrl)}`
 
 
 // const appendChild = (...item) => {
@@ -71,18 +86,34 @@ shareLinkedin.src = '/assets/img/linkedin_logo.svg'
 // }
 
 // appending each element to the article container as they would appear in the DOM.
-console.log(title)
 authorInfo.appendChild(author)
 authorInfo.appendChild(datePublished)
 shareContainer.appendChild(shareIcon)
 shareContainer.appendChild(shareText)
 socialContainer.appendChild(shareContainer)
-socialContainer.appendChild(shareTwitter)
-socialContainer.appendChild(shareWhatsapp)
-socialContainer.appendChild(shareLinkedin)
+socialContainer.appendChild(aTwitter)
+socialContainer.appendChild(aWhatsapp)
+socialContainer.appendChild(aLinkedin)
 container.appendChild(title)
 container.appendChild(authorInfo)
 container.appendChild(socialContainer)
 container.appendChild(img)
 container.appendChild(article)
 // appendChild(title,author,datePublished,img,article)
+
+
+// code for enabling the share button
+const shareData = {
+    title: data.title,
+    text: 'lorem',
+    url: 'postUrl',
+  } 
+
+shareContainer.addEventListener('click', async () => {
+    try {
+      await navigator.share(shareData)
+      console.log('Post Shared successfully')
+    } catch(err) {
+      console.log('Error: ' + err)
+    }
+  })
