@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap');
+
+*, *::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn{
+    background: #ffc100;
+    font-weight: 700;
+    padding: 0.8rem 2rem;
+    margin: 1rem 0;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #fff;
+    border:1px solid #ffc100;
+}
+
+.btn a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn a:hover{
+    color: #ffc100;
+}
+
+.btn:hover a{
+    color: #ffc100;
+}
+
+.blockchain-club{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem;
+    align-items: center;
+}
+
+.blc-text{
+    flex: 0 0 50%;
+}
+
+.blc-img{
+    flex: 0 0 50%;
+}
+
+.blc-img img{
+    width: 250px;
+    height: 250px;
+}
+
+.learning-hub{
+    background-color: #eec341;
+    padding: 2rem;
+}
+
+.lgh-1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.lgh-1-img img{
+    width: auto;
+    height: 250px;
+}
+
+.lgh-1-text{
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    border:1px solid #cacaca;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.25);
+    padding: 1rem;
+    flex-wrap: nowrap;
+}
+
+.lgh-1-text p, .lgh-2-text p, .lgh-3-text p{
+    font-size: 14px;
+    text-align: left;
+}
+
+.lgh-2{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.lgh-2-text{
+    border-radius: 4px;
+    border:1px solid #cacaca;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.25);
+    padding: 1rem;
+}
+
+.lgh-2-img{
+    flex: 0 0 40%;
+}
+
+.lgh-2-img img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.lgh-3{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.lgh-3-text{
+    border-radius: 4px;
+    border:1px solid #cacaca;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.25);
+    padding: .5rem;
+}
+
+.lgh-3-img{
+    flex: 0 0 40%;
+}
+
+.lgh-3-img img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.lgh-3-text, .lgh-1-text, .lgh-2-text{
+    background: #fff
+}
+
+.Subscribe{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 4rem;
+}
+
+.sub-cont{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border:1px solid #cacaca;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.25);
+    padding: .5rem 1rem;
+}
+
+.sub-text{
+    display: flex;
+
+}
+
+.sub-cont form{
+    display: flex;
+    margin: 1rem 0;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.sub-cont form input[type="text"]{
+    width: 300px;
+    height: 30px;
+    padding: 0.5rem .5rem;
+    border-radius: 15px;
+    border: 1px solid #ffc100;
+    outline: none;
+}
+
+.sub-cont form input[type="submit"]{
+    background: #ffc100;
+    padding: 0.3rem 1rem;
+    margin: 1rem 0;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+::placeholder{
+    color: #ffc100;
+    font-size: 18px;
+}
+
+.sub-cont form input[type="submit"]:hover{
+    background: #fff;
+    color: #ffc100;
+    border: 1px solid #ffc100 ;
+}
+
+.sub-cont .sub-img{
+    display: flex;
+    align-items: center;
+}
+
+.sub-cont .sub-img img{
+    width: 100px;
+}
+
+
+@media screen and (min-width: 700px){
+    .blockchain-club{
+        flex-direction: row;
+    }
+
+    .sub-cont form{
+        justify-content: center;
+    }
+
+    .lgh-3-img, .lgh-1-img, .lgh-2-img{
+        flex: 0 0 50%;
+        align-items: center;
+    }
+
+    .lgh-1-img img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .lgh-2-img img{
+        width: 330px;
+        height: 400px;
+    }
+
+    .lgh-3-img img{
+        width: 350px;
+        height: 300px;
+    }
+
+    .lgh-1-text p, .lgh-2-text p, .lgh-3-text p{
+        font-size: 18px;
+        text-align: left;
+    }
+
+
+}
+
+@media screen and (min-width: 1136px){
+    .blockchain-club{
+        margin: 1rem 1rem;
+        align-items: center;
+    }
+    .blockchain-club .blc-text{
+        font-size: 18px;
+    }
+
+    .blc-img{
+       justify-content: center;
+    }
+
+    .blc-img img{
+        width: 300px;
+        height: 300px;
+    }
+    .learning-hub h1{
+        font-size: 30px;
+    }
+
+    .lgh-2{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .lgh-1-img img, .lgh-2-img img,.lgh-3-img img{
+        width: 50vw;
+        height: 350px;
+    }
+
+    .lgh-3-text, .lgh-2-text, .lgh-1-text{
+        width: 400px;
+        height: 400px;
+        padding: 3rem;
+    }
+
+    .lgh-3-text p,.lgh-2-text p, .lgh-1-text p{
+        font-size: 16px;
+        align-self: center;
+    }
+
+    .sub-text .sub-img img{
+        width: 200px;
+    }
+
+    .sub-cont{
+        width: 600px;
+    }
+
+    .sub-cont form input[type="text"]{
+        height: 60px;
+    }
+
+    .sub-cont form input[type="submit"]{
+        padding: 1.5rem 2rem;
+
+    }
+}
