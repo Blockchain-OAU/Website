@@ -68,6 +68,7 @@ h2.heading {
   
   .host-image {
     border-radius: 50%;
+
   }
   
   p.host-name {
@@ -243,6 +244,7 @@ div.top{
 
 .share-btn{
   cursor: pointer;
+  font-size: 2rem !important;
 }
 
 @media screen and (min-width: 400px) {
@@ -263,6 +265,7 @@ div.top{
     height: 230px;
     background-size: 570px;
   }
+
 
   div.top img.banner {
     height: 316px;
