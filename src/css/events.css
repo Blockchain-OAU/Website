@@ -65,30 +65,51 @@ div.img {
   padding: 3rem;
 }
 
-section:not(.show) .team1:nth-child(n+4){
+section:not(.show) .team1:nth-child(n+4) {
   display: none;
 }
 
-.show .show-btn{
-  display: none !important;
-}
-section:not(.show) .hide-btn{
+.show .show-btn {
   display: none !important;
 }
 
-.no-show .hide-btn{
+section:not(.show) .hide-btn {
+  display: none !important;
+}
+
+.no-show .hide-btn {
   display: none;
 }
-.no-show .show-btn{
+
+.no-show .show-btn {
   display: none;
 }
+
 .empty {
   display: none;
   text-align: center;
   margin: 1rem 0;
 }
-.no-show .empty{
+
+.no-show .empty {
   display: block;
+}
+
+.pro a,
+.btn a,
+.num h5 {
+  border: 1px solid #ffc100;
+}
+
+.pro:hover a,
+.btn a:hover,
+.num:hover h5 {
+  background: #fff !important;
+  color: #FFC100 !important;
+}
+
+.num:hover h5 a i{
+  color: #FFC100 !important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -478,12 +499,12 @@ section:not(.show) .hide-btn{
     font-size: 1.5rem;
   }
 
-   .team1 .pro {
+  .team1 .pro {
     text-align: center;
     padding: 15px 30px 30px 30px;
   }
 
- .team1 .pro a {
+  .team1 .pro a {
     background: #FFF4D1;
     font-size: 1rem;
     color: #fff;

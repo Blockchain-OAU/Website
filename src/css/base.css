@@ -118,11 +118,11 @@ nav .close {
 
 header .joinUs {
   background: #ffc100;
+  border: 1px solid #ffc100;
   color: #ffffff;
   font-weight: 700;
   padding: 0 2rem;
   border-radius: 20px;
-  border: none;
   cursor: pointer;
 }
 
@@ -132,6 +132,13 @@ header>.joinUs {
 
 header .joinUs a {
   color: #fff;
+}
+
+.joinUs:hover{
+  background-color: #fff;
+}
+.joinUs:hover a{
+  color: #ffc100;
 }
 
 footer {
