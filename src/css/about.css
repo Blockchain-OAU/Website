@@ -8,9 +8,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+main{
+    margin: 0 1.5rem;
+}
 
 .about-us, .whyBC, .mission{
-    margin: 2rem 1rem;
+    margin: 2rem 0;
 }
 
 .about-us h1, .whyBc h1, .mission h1{
@@ -54,10 +57,16 @@
 .benefit-img{
     display: flex;
     margin: 1rem 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .benefit-img img{
     width: 200px;
+}
+
+.team{
+    margin-bottom: 2rem;
 }
 .team h1{
     text-align: center;
@@ -65,6 +74,7 @@
 .team-img{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -77,8 +87,10 @@
 }
 
 .team-img img{
-    width: 180px;
+    width: 200px;
     height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .team-img button{
@@ -99,6 +111,12 @@
 .img-cont-8{
     align-self: center;
     justify-self: center;
+}
+
+.value{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 @media screen and (min-width: 700px){
@@ -184,5 +202,9 @@
     }
 }
 
-
+@media only screen and (min-width: 1024px){
+    main {
+        margin: 0 3rem;
+    }
+}
 

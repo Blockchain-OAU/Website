@@ -7,4 +7,97 @@ script: "/js/events.js"
 active: "events"
 ---
 
-<h1> Replace this with content of the events page<h1>
+	<div class="back">	
+		<div class="bg-text">
+		<h2> Events </h2>
+		<p> Prepare for our upcoming events and watch videos <br> from our past events.</p>
+		<div class="btn1">
+			<a href="#upcoming-events"> Upcoming events </a>
+		</div>
+	</div>  
+	</div>	
+  
+<section class="events">
+	<div class="event" id="upcoming-events">
+		<h2> Upcoming events </h2>
+
+		<div class="eventMenu">
+			{%- for event in collections.upcomingEvent -%}
+				<div class="team1">
+					<a href="{{event.url}}">
+						<div class="img">
+							<img src="/assets/img/events/{{event.data.pic}}">
+							<i class="fa fa-share-alt share-btn" data-title="{{event.data.name}} by Blockchain OAU" data-url="{{event.url}}" aria-hidden="true"></i>
+						</div>
+						<div class="teamDetails">
+							<div class="name">
+								<div class="nameDetails">
+									<h5>{{event.data.name}}</h5>
+									<p> <i class="fa fa-calendar" aria-hidden="true"></i>  {{event.data.time}} </p>
+									<p> <i class="fa fa-map-marker" aria-hidden="true"></i>  {{event.data.venue}}</p>
+								</div>
+								<div class="num">
+									<h5><a href="{{event.data.tweet}}"><i class="fa fa-heart-o" aria-hidden="true"></i></a></h5>
+								</div>
+							</div>
+							<div class="pro">
+								<p>{{event.data.access}}</p>
+							</div>	
+						</div>
+					</a>
+				</div>
+			{%- endfor -%}
+			<h3 class="empty">No upcoming Events yet.</h3>
+		</div>
+	</div>
+	
+	<div class="btn show-btn">
+		<a href=""> See more</a>
+	</div>
+	<div class="btn hide-btn">
+		<a href=""> See less</a>
+	</div>
+</section>	
+
+<div class="line">
+</div>
+
+<section class="events">
+	<div class="event" id="past-events">
+		<h2> Past events </h2>
+
+		<div class="eventMenu">
+		{%- for event in collections.pastEvent -%}
+			<div class="team1">
+				<a href="{{event.url}}">
+					<div class="img">
+						<img src="/assets/img/events/{{event.data.pic}}">
+					</div>
+					<div class="teamDetails">
+							<div class="name">
+								<div class="nameDetails">
+									<h5>{{event.data.name}}</h5>
+									<p> <i class="fa fa-calendar" aria-hidden="true"></i>  {{event.data.time}}</p>
+									<p> <i class="fa fa-map-marker" aria-hidden="true"></i>  {{event.data.venue}}</p>
+								</div>
+									<div class="num">
+										<h5><a href="{{event.data.tweet}}"><i class="fa fa-heart-o" aria-hidden="true"></i></a></h5>
+									</div>
+							</div>
+								<div class="pro">
+									<a href="{{event.url}}"> Event Gallery </a>
+								</div>	
+							</div>
+				</a>
+				</div>
+		{%- endfor -%}
+		<h3 class="empty">No Event has been held.</h3>
+		</div>
+					</div>
+	<div class="btn show-btn">
+		<a href=""> See more</a>
+	</div>
+	<div class="btn hide-btn">
+		<a href=""> See less</a>
+	</div>
+</section>

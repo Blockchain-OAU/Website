@@ -1,14 +1,21 @@
 ---
-title: Upcoming Event
+title: Upcoming Event - Blockchain Dev Masterclass
 layout: base.njk
-permalink: "/{{page.fileSlug}}/"
 style: "/css/upcoming-event.css"
 script: "/js/upcoming-event.js"
 active: "events"
+tags: upcomingEvent
+pic: "blockchain-conference-2021/banner.jpeg"
+tweet: "https://twitter.com/BlockchainOau/status/1423228186633048067?s=20"
+time: "September 2021"
+access: "Free"
+venue: "Oduduwa Hall, Obafemi Awolowo University"
+name: "Blockchain Conference 2021"
 ---
 
 <div class="top">
-      <img class="banner" id="banner" src="../assets/img/upcoming-events/upcoming-event-banner.svg" alt="">
+      <img class="bg-img" src="/assets/img/events/blockchain-conference-2021/banner.jpeg" alt="">
+      <img class="banner" id="banner" src="/assets/img/events/blockchain-conference-2021/banner.jpeg" alt="">
   </div>
   <div class="details">
       <div class="about">
@@ -20,11 +27,11 @@ active: "events"
           <div class="host-grid">
             <div class="host-column"></div>
               <div class="host-column">
-                  <img class="host-image" src="../assets/img/upcoming-events/blessing-emah.svg" alt="The Blessing Emah" style="width:100%">
+                  <img class="host-image" src="/assets/img/events/blockchain-dev-masterclass//blessing-emah.svg" alt="The Blessing Emah" style="width:100%">
                   <p class="sub-details host-name">Blessing Emah</p>
                 </div>
                 <div class="host-column">
-                  <img class="host-image" src="../assets/img/upcoming-events/nonse-odion.svg" alt="The nonse Odion" style="width:100%">
+                  <img class="host-image" src="/assets/img/events/blockchain-dev-masterclass/nonse-odion.svg" alt="Nonse Odion" style="width:100%">
                   <p class="sub-details host-name">Nonse Odion</p>
                 </div>
           </div>
@@ -37,11 +44,6 @@ active: "events"
 
       <div class="share-with-friends">
           <h2 class="heading2" id="share">Share with friends</h2>
-          <div class="social-icons">
-              <a href="https://twitter.com/blockchainoau"><i class="twitter"></i></a></i>
-              <a href="https://instagram.com/blockchain_oau"><i class="instagram"></i></a>
-              <a href=""><i class="whatsapp"></i></a>
-              <a href="https://www.linkedin.com/company/blockchain-oau"><i class="linkedin"></i></a>
-          </div>
+          <i class="fa fa-share-alt share-btn" data-title="{{event.data.name}} by Blockchain OAU" aria-hidden="true"></i>
       </div>
   </div>

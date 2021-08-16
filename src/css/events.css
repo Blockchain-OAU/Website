@@ -1,0 +1,908 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+.fa.fa-heart-o {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.event .eventMenu {
+  flex-wrap: wrap;
+}
+
+.event .eventMenu .team1 {
+  margin: 1rem;
+}
+
+div.img .share-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+div.img {
+  position: relative;
+}
+
+.back {
+  padding: 3rem 0;
+  position: relative;
+  max-height: 400px;
+}
+
+.back::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.58);
+  margin-top: -3rem;
+  position: absolute;
+  z-index: -1;
+}
+
+.num h5 {
+  cursor: pointer;
+}
+
+.btn1 {
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+.bg-text {
+  padding: 3rem;
+}
+
+section:not(.show) .team1:nth-child(n+4){
+  display: none;
+}
+
+.show .show-btn{
+  display: none !important;
+}
+section:not(.show) .hide-btn{
+  display: none !important;
+}
+
+.no-show .hide-btn{
+  display: none;
+}
+.no-show .show-btn{
+  display: none;
+}
+.empty {
+  display: none;
+  text-align: center;
+  margin: 1rem 0;
+}
+.no-show .empty{
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  /********************************** Background Styling ***********************************************/
+
+
+  /********************************** Background image    **********************************************/
+  .back {
+    background-image: url(/assets/img/events/bg.png);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+
+  /********************************** Background Image  ************************************************/
+
+  .back .overlay {
+    background: #171819;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+  }
+
+  /********************************End of Background Image *******************************************/
+
+  .bg-text h2 {
+    color: #FFFFFF;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+
+
+  .bg-text p {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+
+  .bg-text .btn1 a {
+    color: #fff;
+    background: #FFC100;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem 1.6rem;
+    border-radius: 20px;
+  }
+
+
+  /********************************** past events styling *********************************/
+
+  .event {
+    background: #FFF4D1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 4rem;
+  }
+
+  .event h2 {
+    color: #212529;
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding: 2rem;
+  }
+
+
+
+  .event .eventMenu {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .event .eventMenu .team1 {
+    max-width: 25rem;
+    height: auto;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.01), 0 4.4px 10px rgba(0, 0, 0, 0.015),
+      0 10.6px 24.1px rgba(0, 0, 0, 0.02), 0 35px 80px rgba(0, 0, 0, 0.03);
+  }
+
+  .event .eventMenu .team1 .img img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+  .event .eventMenu .team1 .teamDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  .event .eventMenu .team1 .teamDetails .name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px 0 30px;
+  }
+
+  .event .eventMenu .team1 .teamDetails .name .nameDetails {
+    padding-bottom: 10px;
+  }
+
+  .event .eventMenu .team1 .teamDetails .name .nameDetails h5 {
+    color: #212529;
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .event .eventMenu .team1 .teamDetails .name .nameDetails p {
+    color: #FFC100;
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+  }
+
+
+  .event .eventMenu .team1 .teamDetails .name .num h5 {
+    font-size: 1rem;
+    background: #FFC100;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius: 30px;
+    transform: translate(10%, -120%);
+  }
+
+  .event .eventMenu .team1 .teamDetails .name .num h5 i {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .team1 .pro {
+    padding: 15px 30px 30px 30px;
+  }
+
+  .team1 .pro p {
+    font-size: 1rem;
+    color: #212529;
+  }
+
+  /***************************************end of past event style *******************************/
+
+
+  /************************************* second row styling of past event style ****************/
+  .event1 {
+    background: #FFF4D1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 4rem;
+  }
+
+  .event1 h2 {
+    color: #212529;
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding: 2rem;
+  }
+
+
+
+  .event1 .eventMenu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .event1 .eventMenu .team1 {
+    height: auto;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.01), 0 4.4px 10px rgba(0, 0, 0, 0.015),
+      0 10.6px 24.1px rgba(0, 0, 0, 0.02), 0 35px 80px rgba(0, 0, 0, 0.03);
+
+  }
+
+  .event1 .eventMenu .team1 .img img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+  .event1 .eventMenu .team1 .teamDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  .event1 .eventMenu .team1 .teamDetails .name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px 0 30px;
+  }
+
+  .event1 .eventMenu .team1 .teamDetails .name .nameDetails {
+    padding-bottom: 10px;
+  }
+
+  .event1 .eventMenu .team1 .teamDetails .name .nameDetails h5 {
+    color: #212529;
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .event1 .eventMenu .team1 .teamDetails .name .nameDetails p {
+    color: #FFC100;
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+  }
+
+
+  .event1 .eventMenu .team1 .teamDetails .name .num h5 {
+    font-size: 1rem;
+    background: #FFC100;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius: 30px;
+    transform: translate(10%, -120%);
+  }
+
+  .event1 .eventMenu .team1 .teamDetails .name .num h5 i {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .team1 .pro {
+    padding: 15px 30px 30px 30px;
+  }
+
+  .team1 .pro p {
+    font-size: 1rem;
+    color: #212529;
+  }
+
+
+  /*******************************************End of past event styling ********************************/
+
+
+  /**************************************** Button styling ********************************************/
+
+
+  .btn {
+    background: #FFF4D1;
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+
+  .btn a {
+    color: #fff;
+    background: #FFC100;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem 1.6rem;
+    border-radius: 10px;
+  }
+
+  /******************************************End of button styling **********************************/
+
+
+  /*****************************************Beginning of whitespace styling *************************/
+
+  .line {
+    background: #fff;
+    width: 100%;
+    height: 2rem;
+  }
+
+  /***************************************** End of whitespace styling ******************************/
+
+
+
+  /*******************************************Beginning of Upcoming event styling ********************************/
+
+  .event3 {
+    background: #FFF4D1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 4rem;
+  }
+
+  .event3 h2 {
+    color: #212529;
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding: 2rem;
+  }
+
+
+
+  .event3 .eventMenu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .event3 .eventMenu .team1 {
+    height: auto;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.01), 0 4.4px 10px rgba(0, 0, 0, 0.015),
+      0 10.6px 24.1px rgba(0, 0, 0, 0.02), 0 35px 80px rgba(0, 0, 0, 0.03);
+
+  }
+
+  .event3 .eventMenu .team1 .img img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+  .event3 .eventMenu .team1 .teamDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  .event3 .eventMenu .team1 .teamDetails .name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px 0 30px;
+  }
+
+  .event3 .eventMenu .team1 .teamDetails .name .nameDetails {
+    padding-bottom: 10px;
+  }
+
+  .event3 .eventMenu .team1 .teamDetails .name .nameDetails h5 {
+    color: #212529;
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .event3 .eventMenu .team1 .teamDetails .name .nameDetails p {
+    color: #FFC100;
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+  }
+
+
+  .event3 .eventMenu .team1 .teamDetails .name .num h5 {
+    font-size: 1rem;
+    background: #FFC100;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius: 30px;
+    transform: translate(10%, -120%);
+  }
+
+  .event3 .eventMenu .team1 .teamDetails .name .num h5 i {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+   .team1 .pro {
+    text-align: center;
+    padding: 15px 30px 30px 30px;
+  }
+
+ .team1 .pro a {
+    background: #FFF4D1;
+    font-size: 1rem;
+    color: #fff;
+    background: #FFC100;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem 1.6rem;
+    border-radius: 10px;
+  }
+
+  /*******************************************End of Upcoming event styling ********************************/
+}
+
+
+
+
+@media only screen and (max-width: 1023px) {
+
+
+  /********************************** Background Styling ***********************************************/
+
+
+  /********************************** Background image    **********************************************/
+  .back {
+    background-image: url(/assets/img/events/bg.png);
+    background-size: cover;
+    z-index: -1;
+    width: 100%;
+    background-position: center;
+  }
+
+  .bg-text {
+    padding: 2rem;
+  }
+
+  /**********************************Background Image  ************************************************/
+
+  .back .overlay {
+    background: #171819;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+  }
+
+  /********************************End of Background Image *******************************************/
+
+
+  .bg-text h2 {
+    color: #FFFFFF;
+    font-size: 2rem;
+    padding-bottom: 0;
+  }
+
+
+  .bg-text p {
+    color: #FFFFFF;
+    font-size: 12px;
+    padding-bottom: 1.5rem;
+    width: 60%;
+  }
+
+
+  .bg-text .btn1 a {
+    color: #fff;
+    background: #FFC100;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem 1.3rem;
+    border-radius: 20px;
+  }
+
+
+  /********************************** past events styling *********************************/
+
+  .event {
+    background: #FFF4D1;
+    justify-content: center;
+    padding: 2rem 0;
+
+  }
+
+  .event h2 {
+    color: #212529;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1.5rem 0 0 0rem;
+  }
+
+
+
+  .event .eventMenu {
+    width: 100%;
+    align-items: center;
+  }
+
+  .event .eventMenu .team1 {
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.01), 0 4.4px 10px rgba(0, 0, 0, 0.015),
+      0 10.6px 24.1px rgba(0, 0, 0, 0.02), 0 35px 80px rgba(0, 0, 0, 0.03);
+
+  }
+
+  .event .eventMenu .team1 .img img {
+    width: 100%;
+  }
+
+
+  .event .eventMenu .team1 .teamDetails .name {
+    align-items: center;
+    padding: 5px 0px 0 0px;
+  }
+
+  .event .eventMenu .team1 .teamDetails .name .nameDetails {
+    padding-bottom: 0px;
+  }
+
+  .event .eventMenu .team1 .teamDetails .name .nameDetails h5 {
+    color: #212529;
+    font-size: .9rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .event .eventMenu .team1 .teamDetails .name .nameDetails p {
+    color: #FFC100;
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+  }
+
+
+  .event .eventMenu .team1 .teamDetails .name .num h5 {
+    position: relative;
+    margin-top: -50%;
+    z-index: 2;
+    font-size: 1rem;
+    background: #FFC100;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius: 30px;
+    margin-right: 5%;
+
+
+  }
+
+  .event .eventMenu .team1 .teamDetails .name .num h5 i {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .team1 .pro {
+    padding: 15px 0px 30px 0px;
+  }
+
+  .team1 .pro p {
+    font-size: 1rem;
+    color: #212529;
+  }
+
+  /***************************************end of past event style *******************************/
+
+  /************************************* second row styling of past event style ****************/
+  .event1 {
+    background: #FFF4D1;
+    padding-bottom: 10%;
+  }
+
+  .event1 h2 {
+    color: #212529;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 2rem;
+  }
+
+
+
+  .event1 .eventMenu {
+    width: 100%;
+    align-items: center;
+  }
+
+  .event1 .eventMenu .team1 {
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.01), 0 4.4px 10px rgba(0, 0, 0, 0.015),
+      0 10.6px 24.1px rgba(0, 0, 0, 0.02), 0 35px 80px rgba(0, 0, 0, 0.03);
+    margin: 10% 0%;
+
+
+  }
+
+  .event1 .eventMenu .team1 .img img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+  .event1 .eventMenu .team1 .teamDetails {
+    padding-bottom: 10px;
+  }
+
+  .event1 .eventMenu .team1 .teamDetails .name {
+    padding: 5px 0px 0 0px;
+  }
+
+  .event1 .eventMenu .team1 .teamDetails .name .nameDetails {
+    padding-bottom: 10px;
+  }
+
+  .event1 .eventMenu .team1 .teamDetails .name .nameDetails h5 {
+    color: #212529;
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .event1 .eventMenu .team1 .teamDetails .name .nameDetails p {
+    color: #FFC100;
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+  }
+
+
+  .event1 .eventMenu .team1 .teamDetails .name .num h5 {
+    position: relative;
+    margin-top: -50%;
+    font-size: 1rem;
+    background: #FFC100;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius: 30px;
+    margin-right: 5%;
+  }
+
+  .num h5 {
+    width: 20%;
+    height: 20%;
+    border-radius: 10%;
+    float: right;
+  }
+
+  .event1 .eventMenu .team1 .teamDetails .name .num h5 i {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .team1 .pro {
+    padding: 15px 0px 30px 0px;
+  }
+
+  .team1 .pro p {
+    font-size: 1rem;
+    color: #212529;
+  }
+
+
+
+  /*******************************************End of past event styling ********************************/
+
+
+  /**************************************** Button styling ********************************************/
+
+
+  .btn {
+    background: #FFF4D1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .btn a {
+    color: #fff;
+    background: #FFC100;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem 1.6rem;
+    border-radius: 10px;
+  }
+
+  /******************************************End of button styling **********************************/
+
+
+  /*****************************************Beginning of whitespace styling *************************/
+
+  .line {
+    background: #fff;
+    width: 100%;
+    height: 2rem;
+  }
+
+  /***************************************** End of whitespace styling ******************************/
+
+
+
+  /*******************************************Beginning of Upcoming event styling ********************************/
+
+  .event3 {
+    background: #FFF4D1;
+    padding: 2rem 0rem;
+
+  }
+
+  .event3 h2 {
+    color: #212529;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1.5rem 0 0 0rem;
+  }
+
+
+
+  .event3 .eventMenu {
+    width: 100%;
+    align-items: center;
+    padding-bottom: 10%;
+  }
+
+  .event3 .eventMenu .team1 {
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.01), 0 4.4px 10px rgba(0, 0, 0, 0.015),
+      0 10.6px 24.1px rgba(0, 0, 0, 0.02), 0 35px 80px rgba(0, 0, 0, 0.03);
+    margin: 10% 0;
+
+  }
+
+  .event3 .eventMenu .team1 .img img {
+    width: 100%;
+  }
+
+
+  .event3 .eventMenu .team1 .teamDetails {
+    padding-bottom: 10px;
+  }
+
+  .event3 .eventMenu .team1 .teamDetails .name {
+    align-items: center;
+    padding: 5px 0px 0 0px;
+  }
+
+  .event3 .eventMenu .team1 .teamDetails .name .nameDetails {
+    padding-bottom: 10px;
+  }
+
+  .event3 .eventMenu .team1 .teamDetails .name .nameDetails h5 {
+    color: #212529;
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .event3 .eventMenu .team1 .teamDetails .name .nameDetails p {
+    color: #FFC100;
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+  }
+
+
+  .event3 .eventMenu .team1 .teamDetails .name .num h5 {
+    position: relative;
+    margin-top: -50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    background: #FFC100;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius: 30px;
+    margin-right: 5%;
+  }
+
+  .event3 .eventMenu .team1 .teamDetails .name .num h5 i {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .team1 .pro {
+    text-align: center;
+    padding: 15px 0px 30px 0px;
+  }
+
+  .team1 .pro a {
+    background: #FFF4D1;
+    font-size: 1rem;
+    color: #fff;
+    background: #FFC100;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem 1.6rem;
+    border-radius: 20px;
+  }
+
+  /*******************************************End of Upcoming event styling ********************************/
+
+  /*******************************************new selectors for mobile responsiveness**********************/
+  .event,
+  .event1,
+  .event3 {
+    padding: 1px 5%;
+  }
+
+  .teamDetails {
+    padding-left: 5%;
+  }
+}

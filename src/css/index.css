@@ -8,6 +8,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.blockchain-club{
+    margin: 0 1.5rem;
+}
+
 .btn{
     background: #ffc100;
     font-weight: 700;
@@ -16,11 +20,11 @@
     border-radius: 20px;
     border: none;
     cursor: pointer;
+    border: 1px solid #ffc100 ;
 }
 
 .btn:hover{
     background: #fff;
-    border:1px solid #ffc100;
 }
 
 .btn a{
@@ -39,16 +43,16 @@
 .blockchain-club{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin: 1rem;
     align-items: center;
 }
 
-.blc-text{
-    flex: 0 0 50%;
+.blc-img{
+    margin: 2rem 0;
+    text-align: center;
+    width: 100%;
 }
 
-.blc-img{
+.blc-text{
     flex: 0 0 50%;
 }
 
@@ -59,7 +63,7 @@
 
 .learning-hub{
     background-color: #eec341;
-    padding: 2rem;
+    padding: 2rem 3rem;
 }
 
 .lgh-1{
@@ -67,6 +71,12 @@
     width: 100%;
     align-items: center;
     margin: 3rem 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lgh-1-img{
+    text-align: center;
 }
 
 .lgh-1-img img{
@@ -94,6 +104,8 @@
     width: 100%;
     align-items: center;
     margin: 3rem 0;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
 }
 
 .lgh-2-text{
@@ -105,12 +117,14 @@
 
 .lgh-2-img{
     flex: 0 0 40%;
+    text-align: center;
 }
 
 .lgh-2-img img{
     width: 300px;
     height: 300px;
     object-fit: contain;
+    
 }
 
 .lgh-3{
@@ -118,17 +132,20 @@
     width: 100%;
     align-items: center;
     margin: 3rem 0;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .lgh-3-text{
     border-radius: 4px;
     border:1px solid #cacaca;
     box-shadow: 0 2px 5px rgba(0,0,0, 0.25);
-    padding: .5rem;
+    padding: 1rem;
 }
 
 .lgh-3-img{
     flex: 0 0 40%;
+    text-align: center;
 }
 
 .lgh-3-img img{
@@ -197,7 +214,6 @@
 .sub-cont form input[type="submit"]:hover{
     background: #fff;
     color: #ffc100;
-    border: 1px solid #ffc100 ;
 }
 
 .sub-cont .sub-img{
@@ -249,7 +265,6 @@
 
 @media screen and (min-width: 1136px){
     .blockchain-club{
-        margin: 1rem 1rem;
         align-items: center;
     }
     .blockchain-club .blc-text{
@@ -299,10 +314,17 @@
 
     .sub-cont form input[type="text"]{
         height: 60px;
+
     }
 
     .sub-cont form input[type="submit"]{
         padding: 1.5rem 2rem;
+        border: 1px solid #ffc100 ;
+    }
+}
 
+@media only screen and (min-width: 1024px){
+    .blockchain-club {
+        margin: 0 3rem;
     }
 }

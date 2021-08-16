@@ -1,14 +1,21 @@
 ---
 title: Past Event
 layout: base.njk
-permalink: "/{{page.fileSlug}}/"
 style: "/css/past-event.css"
 script: "/js/past-event.js"
 active: "events"
+tags: pastEvent
+pic: "meet&greet/past-event-banner.svg"
+tweet: "https://twitter.com/BlockchainOau/status/1390736626247155719?s=20"
+time: "Sat, May 24, 2021, 4pm"
+access: "Free"
+venue: "Zoom"
+name: "Meet and Greet"
 ---
 
 <div class="top">
-    <img class="banner" id="banner" src="../assets/img/past-events/past-event-banner.svg" alt="">
+    <img class="bg-img" src="/assets/img/events/meet&greet/past-event-banner.svg" alt="">
+    <img class="banner" id="banner" src="/assets/img/events/meet&greet/past-event-banner.svg" alt="">
 </div>
 
 <div class="details">
@@ -26,51 +33,46 @@ active: "events"
         <h2 class="heading" id="date">Event gallery</h2>
         <div class="gallery-container">
             <div class="gallery-item">
-                <img src="../assets/img/past-events/1.png" alt="" style="width:100%">
+                <img src="/assets/img/events/meet&greet/1.png" alt="" style="width:100%">
             </div>
             <div class="gallery-item">
-                <img src="../assets/img/past-events/2.png" alt="" style="width:100%">
+                <img src="/assets/img/events/meet&greet/2.png" alt="" style="width:100%">
             </div>
             <div class="gallery-item">
-                <img src="../assets/img/past-events/2.png" alt="" style="width:100%">
+                <img src="/assets/img/events/meet&greet/2.png" alt="" style="width:100%">
             </div>
             <div class="gallery-item">
-                <img src="../assets/img/past-events/3.png" alt="" style="width:100%">
+                <img src="/assets/img/events/meet&greet/3.png" alt="" style="width:100%">
             </div>
             <div class="gallery-item">
-                <img src="../assets/img/past-events/3.png" alt="" style="width:100%">
+                <img src="/assets/img/events/meet&greet/3.png" alt="" style="width:100%">
             </div>
             <div class="gallery-item">
-                <img src="../assets/img/past-events/3.png" alt="" style="width:100%">
+                <img src="/assets/img/events/meet&greet/3.png" alt="" style="width:100%">
             </div>
             <div class="gallery-item">
-                <img src="../assets/img/past-events/4.png" alt="" style="width:100%">
+                <img src="/assets/img/events/meet&greet/4.png" alt="" style="width:100%">
             </div>
             <div class="gallery-item">
-                <img src="../assets/img/past-events/4.png" alt="" style="width:100%">
+                <img src="/assets/img/events/meet&greet/4.png" alt="" style="width:100%">
             </div>
             <div class="gallery-item item9">
-                <img src="../assets/img/past-events/5.png" alt="" style="width:100%">
+                <img src="/assets/img/events/meet&greet/5.png" alt="" style="width:100%">
             </div>
             <div class="gallery-item">
-                <img src="../assets/img/past-events/6.png" alt="" style="width:100%">
+                <img src="/assets/img/events/meet&greet/6.png" alt="" style="width:100%">
             </div>
             <div class="gallery-item">
-                <img src="../assets/img/past-events/6.png" alt="" style="width:100%">
+                <img src="/assets/img/events/meet&greet/6.png" alt="" style="width:100%">
             </div>
             <div class="gallery-item item12">
-                <img src="../assets/img/past-events/7.png" alt="" style="width:100%">
+                <img src="/assets/img/events/meet&greet/7.png" alt="" style="width:100%">
             </div>
             </div>
     </div>
 
     <div class="share-with-friends">
         <h2 class="heading2" id="share">Share with friends</h2>
-        <div class="social-icons">
-            <i class="twitter"></i>
-            <i class="instagram"></i>
-            <i class="whatsapp"></i>
-            <i class="linkedin"></i>
-        </div>
+        <i class="fa fa-share-alt share-btn" data-title="{{event.data.name}} by Blockchain OAU" aria-hidden="true"></i>
     </div>
 </div>
