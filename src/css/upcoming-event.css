@@ -11,7 +11,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.bg-img{
+.bg-img {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -43,7 +43,6 @@ div.details {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5rem;
-  padding-top: 0.5rem;
   padding-bottom: 4rem;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -59,22 +58,22 @@ h2.heading {
 }
 
 .host-grid {
-    display: grid;
-    grid-column-gap: 3rem;
+  display: grid;
+  grid-column-gap: 3rem;
   padding: 10px 0;
   justify-content: end;
   grid-template-columns: 30% 25% 25%
 }
-  
-  .host-image {
-    border-radius: 50%;
 
-  }
-  
-  p.host-name {
-    font-weight: bold !important;
-    text-align: center;
-  }
+.host-image {
+  border-radius: 50%;
+
+}
+
+p.host-name {
+  font-weight: bold !important;
+  text-align: center;
+}
 
 p.sub-details {
   font-weight: 500;
@@ -87,6 +86,7 @@ p#venue,
 .social-icons {
   display: flex;
 }
+
 .date {
   background: url("../assets/img/custom-icons/date-icon.svg");
   width: 30px;
@@ -94,6 +94,7 @@ p#venue,
   display: block;
   margin-right: 1.5rem;
 }
+
 .venue {
   background: url("../assets/img/custom-icons/venue-icon.svg");
   width: 30px;
@@ -141,7 +142,7 @@ h2.heading2 {
   margin-right: 1.5rem;
 }
 
-div.top{
+div.top {
   position: relative;
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -152,17 +153,17 @@ div.top{
     height: 170px;
     background-size: 375px;
   }
+
   div.top img.banner {
     height: 220px;
     width: 80%;
   }
 
   div.details {
-    padding-bottom: 2rem;
     width: 80%;
   }
 
-  div.details > div {
+  div.details>div {
     margin: 0 1rem;
   }
 
@@ -174,7 +175,7 @@ div.top{
   }
 
   p.sub-details {
-    font-size: 10px;
+    font-size: 13px;
     line-height: 15px;
   }
 
@@ -242,21 +243,22 @@ div.top{
   }
 }
 
-.share-btn{
+.share-btn {
   cursor: pointer;
   font-size: 2rem !important;
 }
 
 @media screen and (min-width: 400px) {
-    div.top {
-        margin-bottom: 95px;
-        height: 180px;
-        background-size: 450px;
-      }
-      div.top img.banner {
-        height: 250px;
-        width: 80%;
-      }
+  div.top {
+    margin-bottom: 95px;
+    height: 180px;
+    background-size: 450px;
+  }
+
+  div.top img.banner {
+    height: 250px;
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -275,7 +277,7 @@ div.top{
     padding-bottom: 3rem;
   }
 
-  div.details > div {
+  div.details>div {
     margin: 0 1.5rem;
   }
 
@@ -305,6 +307,7 @@ div.top{
     height: 340px;
     background-size: 900px;
   }
+
   div.top img.banner {
     height: 456px;
   }
@@ -313,7 +316,7 @@ div.top{
     padding-bottom: 3rem;
   }
 
-  div.details > div {
+  div.details>div {
     margin: 0 2rem;
   }
 
@@ -330,10 +333,10 @@ div.top{
   }
 
   p#date,
-p#venue,
-.social-icons {
-  height: 2.5rem;
-}
+  p#venue,
+  .social-icons {
+    height: 2.5rem;
+  }
 
   p.sub-details.d-v {
     font-weight: 500;
@@ -348,6 +351,7 @@ p#venue,
     display: block;
     margin-right: 1.5rem;
   }
+
   .venue {
     background: url("../assets/img/custom-icons/venue-icon.svg");
     width: 30px;
@@ -371,16 +375,16 @@ p#venue,
     height: 460px;
     background-size: 1180px;
   }
+
   div.top img.banner {
     height: 620px;
   }
 
   div.details {
-    padding-top: 2rem;
     padding-bottom: 3rem;
   }
 
-  div.details > div {
+  div.details>div {
     margin: 0 3rem;
   }
 
@@ -398,10 +402,10 @@ p#venue,
 
 
   p#date,
-p#venue,
-.social-icons {
-  height: 3rem;
-}
+  p#venue,
+  .social-icons {
+    height: 3rem;
+  }
 
   p.sub-details.d-v {
     font-size: 20px;
@@ -418,33 +422,90 @@ p#venue,
 }
 
 @media screen and (min-width: 1280px) {
-    div.top {
-        margin-bottom: 305px;
+  div.top {
+    margin-bottom: 305px;
     height: 600px;
     background-size: 1560px;
-      }
-      div.top img.banner {
-        height: 820px;
-      }
-    
-      div.details {
-        padding-top: 2rem;
-        padding-bottom: 3rem;
-      }
+  }
+
+  div.top img.banner {
+    height: 820px;
+  }
+
+  div.details {
+    padding-bottom: 3rem;
+  }
 }
 
 @media screen and (min-width: 1360px) {
-    div.top {
-        margin-bottom: 305px;
+  div.top {
+    margin-bottom: 305px;
     height: 600px;
     background-size: 1560px;
-      }
-      div.top img.banner {
-        height: 820px;
-      }
-    
-      div.details {
-        padding-top: 2rem;
-        padding-bottom: 3rem;
-      }
+  }
+
+  div.top img.banner {
+    height: 820px;
+  }
+
+  div.details {
+    padding-bottom: 3rem;
+  }
+}
+
+.countdown {
+  color: #ffffff;
+  padding: 1rem;
+  background-color: #000000;
+  margin: 0 !important;
+  display: flex;
+  z-index: 20;
+}
+
+.countdown .count {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+
+.countdown .countdown-logo {
+  width: 5%;
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.count .time {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.count .time div {
+  display: flex;
+  flex-direction: column;
+}
+
+.count .time span {
+  display: inline-block;
+  background-color: #ffc100;
+  margin: 0 0.4rem;
+  padding: 1rem;
+  font-size: 23px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 550px) {
+  .count .time span {
+    font-size: 16px;
+    padding: 0.5rem;
+  }
+}
+
+.participants p{
+  color: #ffc100;
 }
