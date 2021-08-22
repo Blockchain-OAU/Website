@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap');
+
+*, *::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    margin: 0 1.5rem;
+}
+
+.about-us, .whyBC, .mission{
+    margin: 2rem 0;
+}
+
+.about-us h1, .whyBc h1, .mission h1{
+    font-weight: 600;
+}
+
+.second{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.second .value{
+    display: flex;
+}
+
+.second .value > *{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.second .value p{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.second .value img{
+    width: 100px;
+    height: 150px;
+}
+
+.third-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.benefit-img{
+    display: flex;
+    margin: 1rem 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.benefit-img img{
+    width: 200px;
+}
+
+.team{
+    margin-bottom: 2rem;
+}
+.team h1{
+    text-align: center;
+}
+.team-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.team-img .img-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.team-img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-img button{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.team-img button a{
+    text-decoration: none;
+    color: #000;
+}
+
+.team-img button a img{
+    width: 35px
+}
+
+.img-cont-8{
+    align-self: center;
+    justify-self: center;
+}
+
+.value{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 700px){
+    .second .value img{
+        width: 200px;
+        margin: 0.5rem 0;
+    }
+
+    .second .value p{
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .benefit-img img{
+        width: 300px;
+    }
+
+    .team-img{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .img-cont-1, .img-cont-4, .img-cont-7{
+        grid-column: 1/2;
+    }
+
+    .img-cont-2,.img-cont-5, .img-cont-8{
+        grid-column: 2/3;
+    }
+
+    .img-cont-3, .img-cont-6{
+        grid-column: 3/4;
+    }
+
+    .img-cont-8{
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+@media screen and (min-width: 980px){
+    h1{
+        font-size: 30px;
+        margin-bottom: 1rem;
+    }
+
+    p{
+        font-size: 18px;
+    }
+    .second, .third-cont{
+        margin: 4rem 0;
+    }
+
+    .second .value img{
+        width: 300px;
+    }
+
+    .benefit-img img{
+        width: 400px;
+    }
+
+    .team-img img{
+        width: 250px;
+        height: 300px;
+    }
+
+    .team-img button{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+
+    .team-img h4{
+        font-size: 20px;
+    }
+
+    .team-img p{
+        font-size: 18px;
+    }
+
+    .team-img button a{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    main {
+        margin: 0 3rem;
+    }
+}
+

@@ -18,6 +18,7 @@ footer * {
 a {
   color: black;
   text-decoration: none;
+  cursor: pointer;
 }
 
 header {
@@ -25,6 +26,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
+  margin-bottom: 3rem;
   padding: 0 1.5rem;
 }
 
@@ -39,8 +41,12 @@ nav {
   top: 0;
   bottom: 0;
   display: none;
+  z-index: 10;
 }
 
+.show-mobile-menu{
+  overflow: hidden;
+}
 .show-mobile-menu nav {
   display: unset;
 }
@@ -49,11 +55,11 @@ nav {
   background: none;
   border: none;
   color: #000000;
-  font-size: 3rem;
+  font-size: 2.5rem;
   cursor: pointer;
   float: right;
   position: absolute;
-  top: 0;
+  top: 11px;
   right: 1.5rem;
 }
 
@@ -112,11 +118,11 @@ nav .close {
 
 header .joinUs {
   background: #ffc100;
+  border: 1px solid #ffc100;
   color: #ffffff;
   font-weight: 700;
   padding: 0 2rem;
   border-radius: 20px;
-  border: none;
   cursor: pointer;
 }
 
@@ -126,6 +132,13 @@ header>.joinUs {
 
 header .joinUs a {
   color: #fff;
+}
+
+.joinUs:hover{
+  background-color: #fff;
+}
+.joinUs:hover a{
+  color: #ffc100;
 }
 
 footer {

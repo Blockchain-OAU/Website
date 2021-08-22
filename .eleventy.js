@@ -12,6 +12,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/js");
   eleventyConfig.addWatchTarget("./src/js/");
 
+  //ignore blog
+  //eleventyConfig.ignores.add("blog.*");
+
   return {
     dir: {
       input: "src",
