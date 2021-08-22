@@ -7,4 +7,31 @@ script: "/js/contact-us.js"
 active: "contact-us"
 ---
 
-<h1> Replace this with content of the events page<h1>
+<div align="center" class="form-container">
+
+    <h1>Contact Us</h1>
+
+    <form action="https://getform.io/f/15702755-9703-4def-8f40-9a34c3bf0525" method="POST" enctype="multipart/form-data" target="_blank" onsubmit= "reseter()">
+    
+        <div align="left" class="contact-form-group">
+            <label for="name">Name*</label><br>
+            <input type="text" name="name" id="name" placeholder="" required>
+        </div>
+
+        <div align="left" class="contact-form-group">
+            <label for="email">Email*</label><br>
+            <input type="email" name="email" id="email" placeholder="" required>
+        </div>
+
+        <div align="left" class="contact-form-group">
+            <label for="message">Message*</label><br>
+            <textarea name="message" id="message" placeholder="" rows="8" required></textarea>
+        </div>
+
+        <input type="submit" value="Send">
+    </form>
+</div>
+
+<div class="contact-image">
+    <img class="" src="/assets/img/contact-us-image.svg" alt="Contact Us Image">
+</div>
