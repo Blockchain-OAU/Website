@@ -78,6 +78,10 @@ input[type="submit"] {
   border: 2px solid #000000;
 }
 
+input[type="submit"]:hover {
+  background: rgb(48, 48, 48);
+}
+
 div.contact-image {
     position: relative;
     display: flex;
