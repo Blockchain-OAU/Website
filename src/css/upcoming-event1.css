@@ -11,6 +11,24 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.register-link {
+  margin-top: 3rem;
+  text-align: center;
+  text-decoration: underline;
+  color: #ffc100;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 0;
+}
+
+.register-link {
+  color: #ffc100;
+}
+
+.date-and-venue .fa {
+  margin-right: 10px;
+}
+
 .bg-img {
   position: absolute;
   height: 100%;
@@ -58,16 +76,19 @@ h2.heading {
 }
 
 .host-grid {
-  display: grid;
-  grid-column-gap: 3rem;
   padding: 10px 0;
-  justify-content: end;
-  grid-template-columns: 30% 25% 25%
+  display: flex;
+}
+
+.host-column {
+  display: inline-block;
+  max-width: 33%;
 }
 
 .host-image {
   border-radius: 50%;
-
+  width: 100%;
+  padding: 0.5rem;
 }
 
 p.host-name {
@@ -181,7 +202,6 @@ div.top {
 
   p.sub-details.d-v {
     font-weight: 600;
-    font-size: 10px;
     line-height: 15px;
     color: #ffc100;
   }
@@ -296,7 +316,6 @@ div.top {
 
   p.sub-details.d-v {
     font-weight: 500;
-    font-size: 11px;
     line-height: 17px;
   }
 }
@@ -306,6 +325,10 @@ div.top {
     margin-bottom: 160px;
     height: 340px;
     background-size: 900px;
+  }
+
+  .participants .fa.fa-user {
+    font-size: 30px;
   }
 
   div.top img.banner {
@@ -340,7 +363,6 @@ div.top {
 
   p.sub-details.d-v {
     font-weight: 500;
-    font-size: 16px;
     line-height: 30px;
   }
 
@@ -473,7 +495,6 @@ div.top {
 
 .countdown .countdown-logo {
   width: 5%;
-  width: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -504,8 +525,12 @@ div.top {
     font-size: 16px;
     padding: 0.5rem;
   }
+
+  .countdown .countdown-logo img {
+    width: 150%;
+  }
 }
 
-.participants p{
+.participants p {
   color: #ffc100;
 }

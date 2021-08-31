@@ -14,14 +14,14 @@ window.addEventListener("load", () => {
 })
 
 function getParticipants(){
-  fetch("http://blockchainclub.herokuapp.com/number/")
+  fetch("https://blockchainclub.herokuapp.com/number/")
     .then(res => res.json())
-    .then(json => console.log)
+    .then(json => document.querySelector(".participants-no").textContent = json.number);
 }
 
 function startCountDown(){
   const start = parseInt(Date.now()/1000)
-  const finish = 	1630454400;
+  const finish = 	1630713600;
   const duration = finish - start;
   const [dayInSec, hourInSec, minInSec] = [60 * 60 * 24, 60 * 60, 60]
   const days = parseInt(duration/dayInSec);
