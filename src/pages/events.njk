@@ -22,7 +22,7 @@ active: "events"
 		<h2> Upcoming events </h2>
 
 		<div class="eventMenu">
-			{%- for event in collections.upcomingEvent -%}
+			{%- for event in collections.upcomingEvent | reverse -%}
 				<div class="team1">
 					<a href="{{event.url}}">
 						<div class="img">
@@ -67,7 +67,7 @@ active: "events"
 		<h2> Past events </h2>
 
 		<div class="eventMenu">
-		{%- for event in collections.pastEvent -%}
+		{%- for event in collections.pastEvent | reverse -%}
 			<div class="team1">
 				<a href="{{event.url}}">
 					<div class="img">

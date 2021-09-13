@@ -150,6 +150,7 @@ h2.heading2 {
 
 .share-btn{
   cursor: pointer;
+  font-size: 2rem !important;
 }
 
 @media screen and (min-width: 320px) {

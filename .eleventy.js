@@ -15,6 +15,8 @@ module.exports = function (eleventyConfig) {
   //ignore blog
   //eleventyConfig.ignores.add("blog.*");
 
+  // eleventyConfig.ignores.add("./src/upcoming-events/template.njk");
+
   return {
     dir: {
       input: "src",
