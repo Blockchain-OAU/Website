@@ -7,4 +7,38 @@ script: "/js/article.js"
 active: "article"
 ---
 
-<h1> Replace this with the content of the article page<h1>
+<h1> 
+    <div class="article-container">
+        <section class="article">
+
+        </section>
+        <div id="form-container">
+            <p>Leave a reply</p>
+            <form action="post" id="form">
+                <textarea placeholder="Comment:" cols="30" rows="5"></textarea>
+                <input type="text" placeholder="Name:*">
+                <input type="text" placeholder="Email:*">
+                <input type="text" placeholder="Website:*">
+                <div class="check">
+                    <input type="checkbox" name="subscribe" id="subscribe">
+                    <p>Save my name, email, and website in the browser the next time I visit</p>
+                </div>
+                <button type="submit" id="submit-article">Post comment</button>
+            </form>
+        </div>
+        <div class="card-container">
+            <div class="card-content">
+                <h3>If you enjoyed this article</h3>
+                <p>
+                    Sign up to our newsletter today and you'll be happy to learn
+                    that we send out exclusive newsletter with contents like this.
+                </p>
+                <div class="subscribe-email">
+                    <input type="email" placeholder="Email Address" autocomplete="email">
+                    <button type="submit">subscribe</button>
+                </div>
+            </div>
+            <img src="/assets/img/card-illustration.svg" alt="subscriber illustration" class="card-image">
+        </div>
+    </div>
+<h1>
